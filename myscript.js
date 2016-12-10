@@ -3,11 +3,9 @@ $('document').ready(function(){
 	$('.hidden-test').on('click', hiddenTest);
 	$('#even').on('click', hiddenEven);
 	$('#odd').on('click', hiddenOdd);
-	// $('.hidden-p').on('click', hiddenP);
+	$('.hidden-p').on('click', hiddenP);
 	$('.hidden-p').dblclick('dblclick', doubleClickP);
 	$('span').hover(hoverHiddenSpan);
-}
-
 });
 
 
@@ -23,9 +21,9 @@ function hiddenOdd() {
 	$('h2:odd').css('visibility', 'hidden');
 }
 
-// function hiddenP() {
-// 	$(this).css('visibility', 'hidden');
-// }
+function hiddenP() {
+ 	$(this).css('visibility', 'hidden');
+ }
 
 function doubleClickP() {
 	$(this).css('visibility', 'hidden');
